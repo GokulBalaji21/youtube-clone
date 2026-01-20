@@ -1,0 +1,84 @@
+.thumbnail-pic {
+        width: 100%;
+        margin-bottom: 0px;
+      }
+
+
+.yt-pic-holder{
+  vertical-align: top;
+  margin-top: 10px;
+  }
+
+.video-info-container{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+      }
+
+.video-info{
+  margin-left: 0px;
+      }
+
+.profile-pic{
+  width: 37px;
+  border-radius: 25px;
+      }
+
+.video-title{
+  font-weight: 500;
+  margin-top: 9px;
+  margin-bottom: 0px;
+  line-height: 20px;
+  font-size: 14px;
+      }
+
+.youtuber-name{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  color: gray;
+      }
+
+.views-stats{
+  font-size: 12px;
+  margin-top: 3px;
+  color: gray;
+      }
+
+.video-grid{
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
+      }
+
+@media (max-width: 750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:751px) and (max-width:999px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.thumbnail-container{
+  position: relative;
+}
+
+.video-time{
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 2px;
+}

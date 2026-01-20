@@ -1,0 +1,149 @@
+.header{
+    height: 57px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border: 1px solid rgb(221, 217, 217);
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar{
+    height: 25px;
+    margin-left: 25px;
+}
+
+.youtube-icon{
+    height: 20px;
+    margin-left: 25px;
+}
+
+.center-section{
+    display: flex;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    align-items: center;
+}
+
+.search-bar{
+    flex: 1;
+    width: 0;
+    height: 36px;
+    padding-left: 12px;
+    font-size: 17px;
+    border: rgb(204, 204, 204) 1px solid;
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-btn-container{
+    height: 40px;
+    width: 65px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-left: -1px;
+    position: relative;
+}
+
+.voice-btn-container, 
+.search-btn-container,
+.upload-btn-container,
+.yt-apps-btn-container,
+.notifications-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-btn-container .tooltip,
+.voice-btn-container .tooltip,
+.upload-btn-container .tooltip,
+.yt-apps-btn-container .tooltip,
+.notifications-container .tooltip{
+    position: absolute;
+    background-color: rgb(121, 121, 121);
+    color: white;
+    bottom: -35px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.search-btn-container:hover .tooltip,
+.voice-btn-container:hover .tooltip,
+.upload-btn-container:hover .tooltip,
+.yt-apps-btn-container:hover .tooltip,
+.notifications-container:hover .tooltip{
+    opacity: 1;
+}
+
+.search-btn-icon{
+    height: 25px;
+}
+
+.voice-btn-container{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.voice-btn-icon{
+    height: 25px;
+    border-radius: 30px;
+}
+
+.right-section{
+    width: 185px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.upload-btn{
+    height: 25px;
+}
+
+.yt-apps-btn{
+    height: 25px;
+}
+
+.notifications-btn{
+    height: 25px;
+}
+
+.notifications-count{
+    font-size: 10px;
+    background-color: rgb(197, 14, 14);
+    color: white;
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.yt-profile{
+    height: 35px;
+    width: 35px;
+    border-radius: 25px;
+}
